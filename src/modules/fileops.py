@@ -21,4 +21,6 @@ def write_json(data):
 def get_random():
     j = read_json()
     bullshit = j["wisdoms"][random.randint(0,len(j["wisdoms"]) - 1)]
+    bullshit = bullshit["truth"]
+    bullshit = bullshit.upper()
     return bullshit

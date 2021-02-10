@@ -7,10 +7,16 @@
   </head>
   <body>
     <style>
+      * {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+        letter-spacing: 1px;
+        font-size: larger;
+        text-align: justify;
+      }
       body {
         background-color: yellow;
       }
-      .wrapper {
+      .retard-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,19 +24,78 @@
       .retardation {
         max-width: 70%;
       }
-      * {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
-        letter-spacing: 1px;
-        font-size: larger;
-        text-align: justify;
+      hr {
+        border-color: black;
+        border-width: 5px;
+        z-index: 0;
       }
+      .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+        max-width: 70%;
+        margin:auto;
+      }
+      .about h3 {
+        font-size: 2vw;
+        margin: auto;
+        margin-bottom: 1vw;
+      }
+
+      .about h5 {
+        margin: auto;
+        font-size: 1vw;
+      }
+
+    .fixed-footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        position: fixed;        
+        color: #fff;
+        bottom: 0;
+        background-color: black;
+        margin: auto;
+    }
+    .donate{
+      display: flex;
+      justify-content: right;
+    }
+
     </style>
-    <div class="wrapper">
+    <div class="retard-wrapper">
       <div class="retardation">
         <div class="retardsays">
-          <p>{{retard['truth']}}</p>
+          <p>{{ retard }}</p>
         </div>
       </div>
     </div>
+    <div class="divider">
+      <hr>
+    </div>
+    <div class="about">
+      <h3>Az oldalról</h3>
+      <h5>Szabályok</h5>
+      <ol>
+        <li>
+          Ha nem tetszik, nem kell itt lenned.
+        </li>
+        <li>
+          Ha felismered az írásod, szégyeld magad!
+        </li>
+        <li>
+          Lehet beküldeni kommenteket, de azért csak okosan!
+        </li>
+      </ol>
+    </div>
+    <div class="fixed-footer">
+      <p>Copyright &copy; 2021 2570.hu</p>
+      <div class="donate">
+        <button><a href="https://www.paypal.com/donate?hosted_button_id=LJBRGXQXLC2JN">Vegyél nekem egy felest</a></button>
+      </div>
+  </div>
   </body>
 </html>

@@ -12,7 +12,9 @@ def create_response(status_code, payload):
 
 @app.route("/", methods=['GET'])
 def index():
-    return render_template('index.html', retard=get_random())
+    bullshit = get_random()
+    print(type(bullshit))
+    return render_template('index.html', retard=bullshit)
 
 @app.route("/upload_wisdom", methods=['GET','POST'])
 def upload_wisdom():
