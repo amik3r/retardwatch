@@ -13,7 +13,6 @@ def create_response(status_code, payload):
 @app.route("/", methods=['GET'])
 def index():
     bullshit = get_random()
-    print(type(bullshit))
     return render_template('index.html', retard=bullshit)
 
 @app.route("/upload_wisdom", methods=['GET','POST'])
@@ -25,4 +24,4 @@ def upload_wisdom():
         return render_template('upload.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='localhost')

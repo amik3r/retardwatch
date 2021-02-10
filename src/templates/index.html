@@ -37,34 +37,58 @@
         font-size: medium;
         max-width: 70%;
         margin:auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
       }
       .about h3 {
         font-size: 2vw;
         margin: auto;
         margin-bottom: 1vw;
-      }
+        text-decoration: underline;
 
+      }
       .about h5 {
         margin: auto;
         font-size: 1vw;
+        text-decoration: underline;
       }
-
-    .fixed-footer{
-        width: 100%;
+      .fixed-footer{
         display: flex;
         justify-content: space-between;
-        max-width: 100%;
-        position: fixed;        
-        color: #fff;
+        height:fit-content;
+        position: fixed;
         bottom: 0;
-        background-color: black;
-        margin: auto;
-    }
-    .donate{
-      height: 2vw;
-      display: flex;
-      justify-content: right;
-    }
+        width: 100%;
+        left:0;
+        background-color: yellow;
+      }
+      .donate{
+        display: flex;
+        justify-content: right;
+        font-size: 10px;
+      }
+      .donate a:hover {
+        color: inherit;
+      }
+      button {
+        background-color: black; /* Green */
+        border: none;
+        color: white;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      #gh-logo{
+        height: 1.5vw;
+        align-content: center;
+        color: black;
+      }
+
+      #gh-logo {
+        color: black;
+      }
 
     </style>
     <div class="retard-wrapper">
@@ -79,6 +103,10 @@
     </div>
     <div class="about">
       <h3>Az oldalról</h3>
+      <h5>Adatflehasználás</h5>
+      <p>
+        Nem kellenek az adataid
+      </p>
       <h5>Szabályok</h5>
       <ol>
         <li>
@@ -88,15 +116,15 @@
           Ha felismered az írásod, szégyeld magad!
         </li>
         <li>
-          Lehet beküldeni kommenteket, de azért csak okosan!
+          Lehet <a href="https://2570.hu/upload_wisdom" target="_blank" style="color: black;">beküldeni</a> kommenteket, de azért csak okosan!
         </li>
       </ol>
     </div>
     <div class="fixed-footer">
-      <p>Copyright &copy; 2021 2570.hu</p>
-      <div class="donate">
-        <button><a href="https://www.paypal.com/donate?hosted_button_id=LJBRGXQXLC2JN">Vegyél nekem egy felest</a></button>
-      </div>
+      <span>Copyright <span style="font-size: 1vw;"> (vagy nemtudom mi)</span> &copy; 2021</span>
+      <a href="https://github.com/amik3r/retardwatch" target="_blank"><img id="gh-logo" src="static/img/GitHub-Mark-64px.png" alt="github-mark.png"><span style="color: black; font-size: 1.5vw;">   amik3r</span></a>
+      <button type="submit" name="submit"><a href="https://www.paypal.com/donate?hosted_button_id=HNA9V7B5EDGMS" target="_blank">Felesre gyűjtök</a></button>
+    </form>
   </div>
   </body>
 </html>
